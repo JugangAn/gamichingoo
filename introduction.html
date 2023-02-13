@@ -1,9 +1,125 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>introduction</title>
-    </head>
-    <body>
+        <title>Introduction</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+            #intro {
+                background-color: rgb(255, 246, 232);
+                margin: 0;
+            }
+            #intro .container {
+                display: grid;
+                grid-template-columns: 30px 1fr;
+                grid-auto-rows: 150px;
+            }
+            #intro .container .box1 {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            #intro .container .box2 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            #intro .container .box3 {
+                grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            #intro .title {
+                text-align: center;
+                color: rgba(0, 0, 0, 0.733);
+                font-size: 60px;
+                font-family: 'IBM Plex Sans KR', sans-serif;
+                margin: 0; margin-top: 20px;
+            }
+            #intro .list {
+                font-weight: 600;
+                font-size: 22px;
+                color:antiquewhite;
+                /*position: sticky;*/
+                margin-top: 8%;
+            }
+            #intro .list .first {
+                background-color: rgb(187, 71, 67);
+                width:min-content;
 
+            }
+            #intro .list .second {
+                background-color: rgb(187, 71, 67);
+                width:min-content;
+
+            }
+            #intro .list .third {
+                background-color: rgb(187, 71, 67);
+                width:min-content;
+            }
+            #intro .list .first p {
+                margin: 0;
+            }
+            #intro .list .second p {
+                margin: 0;
+                margin-top:4%;
+            }
+            #intro .list .third p {
+                margin: 0;
+                margin-top: 4%;                
+            }
+            a {
+                text-decoration: none;
+                color: antiquewhite;
+            }
+            #intro .container .box2 .list .first .current {
+                color: rgb(239, 245, 183);
+            }
+            #intro .content {
+                color: black;
+                text-align: center;
+            }
+            #intro .container .box3 .content .gami2 {
+                width: 40%;
+            }
+            #intro .container .box3 .content .source {
+                text-decoration: none;     
+            }
+            #intro .container .box3 .content .para1, .para2{
+                margin: 0;
+            }
+            #intro .container .box3 .content .source {
+                color: rgba(194, 186, 186, 0.747);
+            }
+        </style>
+    </head>
+    <body id="intro">
+        <div class="container">
+            <div class="box1">
+                <h1 class="title">개미친구, 개 미친 구주완</h1>
+            </div>
+            <div class="box2">
+                <div class="list">
+                    <div class="first">
+                        <p><a href="introduction.html" class="current">소개</a></p>
+                    </div>
+                    <div class="second">
+                        <p><a href="music.html">노래</a></p>
+                    </div>
+                    <div class="third">
+                        <p><a href="index.html">처음으로</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="content">
+                    <p class="para1"><br><img class="gami2" src="gamichingoo_2.jpg" alt="A Portrait of Gamichingoo"></p>
+                    <p class="para2"><a href="https://music.bugs.co.kr/artist/20078110?wl_ref=S_ar_01_01" class="source">출처: 벅스 아티스트 이미지</a></p>
+                    <p class="para3">우선, 그리드를 통해 모양을 잡고 글을 채워나갈 예정입니다.</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
