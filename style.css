@@ -65,19 +65,9 @@
     font-weight: 600;
     font-size: 22px;
     color:antiquewhite;
-    /*position: sticky;*/
     margin-top: 8%;
 }
-#intro .list .first {
-    background-color: rgb(187, 71, 67);
-    width:min-content;
-
-}
-#intro .list .second {
-    background-color: rgb(187, 71, 67);
-    width:min-content;
-}
-#intro .list .third {
+#intro .list .first, .second, .third {
     background-color: rgb(187, 71, 67);
     width:min-content;
 }
@@ -85,16 +75,12 @@
     text-decoration: none;
     color: antiquewhite;
 }
-#intro .list .first p {
+#intro .list .first p, #intro .container .box3 .content .para1, .para2 {
     margin: 0;
 }
-#intro .list .second p {
+#intro .list .second p, .third p {
     margin: 0;
     margin-top:4%;
-}
-#intro .list .third p {
-    margin: 0;
-    margin-top:4%;                
 }
 #intro .content {
     color: black;
@@ -106,12 +92,27 @@
 #intro .container .box3 .content .source {
     text-decoration: none;     
 }
-#intro .container .box3 .content .para1, .para2{
-    margin: 0;
-}
 #intro .container .box3 .content .source {
     color: rgba(194, 186, 186, 0.747);
 }
-#intro .container .box3 .content .para3 {
+#intro .container .box3 {
     text-align:center;
+    line-height: 150%;
+}
+#intro .container .box3 .music1 {
+    margin-top: 6%;
+}
+#intro .container .box3 .music2, .music3 {
+    margin-top: 5%;
+}
+#intro .container .box3 .music2 .quote {
+    font-style: italic;
+    margin: 28px;
+}
+#intro .container .box3 .music2 .music3 .last {
+    margin-bottom: 5%;
+}
+.info {
+    text-align: center;
+    color: rgba(94, 94, 90, 0.548);
 }
